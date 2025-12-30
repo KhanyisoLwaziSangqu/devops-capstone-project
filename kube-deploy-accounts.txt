@@ -1,0 +1,16 @@
+NAME                            READY   STATUS    RESTARTS   AGE
+pod/accounts-77f95b5dff-s66v6   1/1     Running   0          3h29m
+pod/accounts-77f95b5dff-s9ql8   1/1     Running   0          3h29m
+pod/accounts-77f95b5dff-tzql8   1/1     Running   0          3h29m
+
+NAME               TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)    AGE
+service/accounts   ClusterIP   172.21.140.52   <none>        8080/TCP   3h28m
+
+NAME                       READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/accounts   3/3     3            3           3h29m
+
+NAME                                  DESIRED   CURRENT   READY   AGE
+replicaset.apps/accounts-77f95b5dff   3         3         3       3h29m
+
+NAME                                HOST/PORT                                                                                                                      PATH   SERVICES   PORT   TERMINATION   WILDCARD
+route.route.openshift.io/accounts   accounts-sn-labs-khanyiso88.labs-prod-openshift-san-a45631dc5778dc6371c67d206ba9ae5c-0000.us-east.containers.appdomain.cloud          accounts   8080   edge          None
