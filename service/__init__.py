@@ -17,6 +17,7 @@ app.config.from_object(config)
 
 # Initialize Talisman
 talisman = Talisman(app)
+talisman.force_https = False
 
 # Initialize CORS
 CORS(app)
